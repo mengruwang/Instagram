@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1071722313641",
+    "firebase_url": "https://instagram-a25f1.firebaseio.com",
+    "project_id": "instagram-a25f1",
+    "storage_bucket": "instagram-a25f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071722313641:android:234cd355bda15237",
+        "android_client_info": {
+          "package_name": "com.mengrudaddy.instagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071722313641-5cjtac7pjjohcah8e99k67dnbruf6nut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEeykZKe8V_2e9Hb3_-VHZvvpKb2I3bLg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
