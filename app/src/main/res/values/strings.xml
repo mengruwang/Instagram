@@ -1,13 +1,36 @@
 <resources>
     <string name="app_name">Instagram</string>
+
     <string name="bottom_switch_photo">Photo</string>
     <string name="bottom_switch_video">Video</string>
     <string name="cancle">Cancle</string>
     <string name="next">Next</string>
+
     <string name="all_photos">All Photos</string>
     <string name="username">UserName</string>
+
     <string name="tab1">this is tab 1</string>
     <string name="tab2">this is tab 2</string>
+
+    <string name="post_num">132</string>
+    <string name="following_num">47</string>
+    <string name="follower_num">47</string>
+
+    <string name="post">posts</string>
+    <string name="following">following</string>
+    <string name="follower">followers</string>
+    <string name="edit_profile">Edit Profile</string>
+
+    <string name="user_description1">Study at Melbourne Uni</string>
+    <string name="user_description2">xi xi xi xi xi xi :-) </string>
+    <string name="likes">User Mengchao, ABC likes this photo</string>
+
+    <string name="comment_user">Jack</string>
+    <string name="comment_content">: cool cool cool!!</string>
+    <string name="add_comment">Add a comment...</string>
+
+
+
 
 
 </resources>
