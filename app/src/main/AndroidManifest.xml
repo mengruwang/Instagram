@@ -21,7 +21,8 @@
 
         <activity android:name=".SearchActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan">
         </activity>
 
         <activity android:name=".Photo"
