@@ -69,6 +69,7 @@
             android:layout_gravity="center"
             android:id="@+id/action_photo"
             android:onClick="switch_upload_mode"/>
+        <!--
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -80,6 +81,7 @@
             android:paddingEnd="40dp"
             android:id="@+id/action_video"
             android:onClick="switch_upload_mode"/>
+            -->
     </android.support.v7.widget.Toolbar>
 
 </RelativeLayout>

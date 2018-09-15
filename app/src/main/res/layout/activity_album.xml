@@ -68,18 +68,20 @@
             android:paddingLeft="10dp"
             android:id="@+id/action_photo"
             android:onClick="switch_upload_mode"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/bottom_switch_video"
-            android:textSize="18sp"
-            android:textColor="@color/textNotClicked"
-            android:textStyle="bold"
-            android:layout_gravity="end"
-            android:paddingEnd="40dp"
-            android:id="@+id/action_video"
-            android:onClick="switch_upload_mode"/>
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bottom_switch_video"
+        android:textSize="18sp"
+        android:textColor="@color/textNotClicked"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:paddingEnd="40dp"
+        android:id="@+id/action_video"
+        android:onClick="switch_upload_mode"/>
+        -->
     </android.support.v7.widget.Toolbar>
-    <!--android:onClick="function name"-->
+<!--android:onClick="function name"-->
 
 </RelativeLayout>

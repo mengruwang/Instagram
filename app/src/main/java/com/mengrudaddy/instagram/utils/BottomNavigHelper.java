@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import com.mengrudaddy.instagram.ActivityFeed;
 import com.mengrudaddy.instagram.MainActivity;
+import com.mengrudaddy.instagram.Photo;
 import com.mengrudaddy.instagram.ProfileActivity;
 import com.mengrudaddy.instagram.R;
 import com.mengrudaddy.instagram.SearchActivity;
@@ -43,7 +44,7 @@ public class BottomNavigHelper {
                         context.startActivity(search);
                         break;
                     case R.id.action_upload:
-                        Intent upload = new Intent(context, Video.class);
+                        Intent upload = new Intent(context, Photo.class);
                         context.startActivity(upload);
                         ((Activity)context).overridePendingTransition(R.anim.slide_up, R.anim.slide_down);
                         break;
