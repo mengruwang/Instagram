@@ -1,12 +1,12 @@
 package com.mengrudaddy.instagram;
 
 import android.content.Context;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.mengrudaddy.instagram.utils.BottomNavigHelper;
 
 public class ProfileActivity extends AppCompatActivity{
@@ -28,12 +28,12 @@ public class ProfileActivity extends AppCompatActivity{
      */
 
     private void setUpBottomNavigView(){
-        BottomNavigationViewEx bottomNavigationViewEx = findViewById(R.id.bottom_navigation);
-        Log.d(TAG, "setUpBottomNavigView: "+bottomNavigationViewEx);
-        BottomNavigHelper.setUp(bottomNavigationViewEx);
-        BottomNavigHelper.NavigEnable(context,bottomNavigationViewEx);
-        Menu menu = bottomNavigationViewEx.getMenu();
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        Log.d(TAG, "setUpBottomNavigView: "+bottomNavigationView);
+        BottomNavigHelper.setUp(bottomNavigationView);
+        BottomNavigHelper.NavigEnable(context,bottomNavigationView);
+        Menu menu = bottomNavigationView.getMenu();
         MenuItem mItem = menu.getItem(ACTIVITY_NUM);
-        mItem.setChecked(true) ;
+        mItem.setChecked(true);
     }
 }

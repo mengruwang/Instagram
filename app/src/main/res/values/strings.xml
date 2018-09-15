@@ -3,6 +3,7 @@
 
     <string name="bottom_switch_photo">Photo</string>
     <string name="bottom_switch_video">Video</string>
+    <string name="bottom_switch_album">Library</string>
     <string name="cancle">Cancle</string>
     <string name="next">Next</string>
 
@@ -29,9 +30,12 @@
     <string name="comment_content">: cool cool cool!!</string>
     <string name="add_comment">Add a comment...</string>
     <string name="follow_new">Follow</string>
+    <string name="delete">Delete</string>
 
+    <string name="edit_fragment">Edit</string>
+    <string name="filter_fragment">Filter</string>
+    <string name="brightness">Brigtness</string>
 
-
-
+    <string name="filter_name">Filter A</string>
 
 </resources>

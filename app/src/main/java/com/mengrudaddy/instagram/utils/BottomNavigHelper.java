@@ -7,15 +7,11 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.util.Log;
 import android.view.MenuItem;
-
-import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.mengrudaddy.instagram.ActivityFeed;
 import com.mengrudaddy.instagram.MainActivity;
-import com.mengrudaddy.instagram.Photo;
 import com.mengrudaddy.instagram.ProfileActivity;
 import com.mengrudaddy.instagram.R;
 import com.mengrudaddy.instagram.SearchActivity;
-import com.mengrudaddy.instagram.Photo;
 import com.mengrudaddy.instagram.Video;
 
 /*
@@ -25,16 +21,13 @@ import com.mengrudaddy.instagram.Video;
 public class BottomNavigHelper {
     private static final String TAG = "BottomNavigHelper";
 
-    public static void setUp(BottomNavigationViewEx bottomNavigationViewEx) {
-        Log.d(TAG, "setUpBottomNavigView: "+bottomNavigationViewEx);
-        //bottomNavigationViewEx.enableAnimation(true);
-        //bottomNavigationViewEx.enableItemShiftingMode(false);
-        //bottomNavigationViewEx.enableShiftingMode(false);
-        //bottomNavigationViewEx.setTextVisibility(false);
+    public static void setUp(BottomNavigationView bt_navig) {
+        Log.d(TAG, "setUpBottomNavigView: "+bt_navig);
+
 
     }
-    public static void NavigEnable(final Context context, BottomNavigationViewEx btViewEx){
-        btViewEx.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+    public static void NavigEnable(final Context context, BottomNavigationView bt_navig){
+        bt_navig.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 int id=menuItem.getItemId();

@@ -1,6 +1,7 @@
 package com.mengrudaddy.instagram;
 
 import android.content.Context;
+import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +9,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.mengrudaddy.instagram.utils.BottomNavigHelper;
 import com.mengrudaddy.instagram.utils.TabAdapter;
 
@@ -38,13 +38,13 @@ public class ActivityFeed extends AppCompatActivity{
      */
 
     private void setUpBottomNavigView(){
-        BottomNavigationViewEx bottomNavigationViewEx = findViewById(R.id.bottom_navigation);
-        Log.d(TAG, "setUpBottomNavigView: "+bottomNavigationViewEx);
-        BottomNavigHelper.setUp(bottomNavigationViewEx);
-        BottomNavigHelper.NavigEnable(context,bottomNavigationViewEx);
-        Menu menu = bottomNavigationViewEx.getMenu();
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        Log.d(TAG, "setUpBottomNavigView: "+bottomNavigationView);
+        BottomNavigHelper.setUp(bottomNavigationView);
+        BottomNavigHelper.NavigEnable(context,bottomNavigationView);
+        Menu menu = bottomNavigationView.getMenu();
         MenuItem mItem = menu.getItem(ACTIVITY_NUM);
-        mItem.setChecked(true) ;
+        mItem.setChecked(true);
     }
 
     private void setUpTabView(ViewPager page){
@@ -52,8 +52,6 @@ public class ActivityFeed extends AppCompatActivity{
         tabPage.addFragment(new Tab1Following(),"Following");
         tabPage.addFragment(new Tab2You(),"You");
         page.setAdapter(tabPage);
-
-
 
     }
 }
